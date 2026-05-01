@@ -675,6 +675,7 @@
   .step-row.reverse .step-content,
   .step-row.reverse .step-visual {
     order: unset;
+    width: stretch;
   }
 
   .step-visual {
@@ -908,7 +909,9 @@
   .faq-q {
     font-size: 0.95rem;
   }
-
+.ai-features li{
+  text-align: left;
+}
   .final-card {
     padding: 50px 20px;
   }
