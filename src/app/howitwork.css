@@ -656,3 +656,243 @@
   .app-btn:hover { background: rgba(255,255,255,0.15); transform: translateY(-2px); }
   .app-btn .t1 { font-size: 0.7rem; opacity: 0.7; line-height: 1; }
   .app-btn .t2 { font-size: 1rem; font-weight: 600; line-height: 1.2; }
+
+
+  /* ============================= */
+/* 📱 HOW PAGE RESPONSIVE FIX */
+/* ============================= */
+
+/* Large tablets */
+@media (max-width: 1200px) {
+  .step-row {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    margin-bottom: 70px;
+  }
+
+  .step-row.reverse .step-content,
+  .step-row.reverse .step-visual {
+    order: unset;
+  }
+
+  .step-visual {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .ai-card {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .trust-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .compare-row {
+    grid-template-columns: 1.5fr 1fr 1fr;
+  }
+}
+
+/* Tablets */
+@media (max-width: 992px) {
+  .page-hero {
+    padding: 120px 0 70px;
+  }
+
+  .page-hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .page-hero .lead {
+    font-size: 1rem;
+  }
+
+  section {
+    padding: 70px 0;
+  }
+
+  .section-head {
+    margin-bottom: 40px;
+  }
+
+  .journey-tabs {
+    gap: 6px;
+  }
+
+  .jt-btn {
+    font-size: 0.85rem;
+    padding: 8px 16px;
+  }
+
+  .step-content h2 {
+    font-size: 1.6rem;
+  }
+
+  .step-content p {
+    font-size: 0.95rem;
+  }
+
+  .step-visual {
+    padding: 24px;
+    min-height: auto;
+  }
+
+  .mock-search,
+  .mock-book,
+  .mock-chat,
+  .mock-track {
+    max-width: 100%;
+  }
+
+  .mb-dates {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .trust-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .compare-card {
+    border-radius: 16px;
+  }
+
+  .compare-row {
+    padding: 16px 18px;
+    font-size: 0.85rem;
+  }
+
+  .faq-item {
+    padding: 18px 20px;
+  }
+
+  .ai-card {
+    padding: 40px 30px;
+  }
+
+  .final-card {
+    padding: 60px 30px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .page-hero {
+    padding: 100px 0 60px;
+  }
+
+  .page-hero h1 {
+    font-size: 1.8rem;
+    line-height: 1.3;
+  }
+
+  .page-hero .lead {
+    font-size: 0.95rem;
+  }
+
+  .hero-cta {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero-cta .btn-gold,
+  .hero-cta .btn-outline-light {
+    width: 100%;
+    text-align: center;
+  }
+
+  .journey-tabs {
+    justify-content: center;
+  }
+
+  .jt-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .step-row {
+    gap: 24px;
+    margin-bottom: 50px;
+  }
+
+  .step-number {
+    font-size: 0.7rem;
+  }
+
+  .step-content h2 {
+    font-size: 1.4rem;
+  }
+
+  .step-content p {
+    font-size: 0.92rem;
+  }
+
+  .step-points li {
+    font-size: 0.9rem;
+  }
+
+  .step-visual {
+    padding: 18px;
+    border-radius: 18px;
+  }
+
+  .mock-search,
+  .mock-book,
+  .mock-chat,
+  .mock-track {
+    padding: 14px;
+  }
+
+  .mb-dates {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .chat-bubble {
+    max-width: 100%;
+  }
+
+  .ai-card {
+    padding: 30px 20px;
+  }
+
+  .ai-bubble.me {
+    margin-left: 0;
+  }
+
+  .compare-row {
+    grid-template-columns: 1fr;
+    gap: 6px;
+    text-align: left;
+  }
+
+  .compare-row.head {
+    display: none;
+  }
+
+  .compare-row .col-sertify,
+  .compare-row .col-other {
+    text-align: left;
+  }
+
+  .faq-q {
+    font-size: 0.95rem;
+  }
+
+  .final-card {
+    padding: 50px 20px;
+  }
+
+  .final-card h2 {
+    font-size: 1.6rem;
+  }
+
+  .final-card p {
+    font-size: 0.95rem;
+  }
+
+  .app-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
