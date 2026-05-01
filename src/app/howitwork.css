@@ -664,12 +664,14 @@
 
 /* Large tablets */
 @media (max-width: 1200px) {
+
   .step-row {
     grid-template-columns: 1fr;
     gap: 40px;
     margin-bottom: 70px;
   }
 
+  /* ❌ remove reverse switching effect */
   .step-row.reverse .step-content,
   .step-row.reverse .step-visual {
     order: unset;
@@ -695,8 +697,10 @@
   }
 }
 
+
 /* Tablets */
 @media (max-width: 992px) {
+
   .page-hero {
     padding: 120px 0 70px;
   }
@@ -776,8 +780,10 @@
   }
 }
 
+
 /* Mobile */
 @media (max-width: 576px) {
+
   .page-hero {
     padding: 100px 0 60px;
   }
@@ -811,9 +817,30 @@
     text-align: center;
   }
 
+  /* ============================= */
+  /* 🔥 FIX: STEP ROW MOBILE LAYOUT */
+  /* ============================= */
+
   .step-row {
+    display: flex;
+    flex-direction: column;
     gap: 24px;
     margin-bottom: 50px;
+  }
+
+  /* 🚨 IMPORTANT: ignore reverse completely */
+  .step-row.reverse .step-content,
+  .step-row.reverse .step-visual {
+    order: unset !important;
+  }
+
+  /* enforce SAME order for all rows */
+  .step-content {
+    order: 1;
+  }
+
+  .step-visual {
+    order: 2;
   }
 
   .step-number {
@@ -861,9 +888,12 @@
   }
 
   .compare-row {
-    grid-template-columns: 1fr;
+    grid-template-columns: 9fr 1fr 1fr;
+    align-items: center;
+    padding: 22px 30px;
+    font-size: .95rem;
+    display: grid;
     gap: 6px;
-    text-align: left;
   }
 
   .compare-row.head {
