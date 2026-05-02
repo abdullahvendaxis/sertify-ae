@@ -14,7 +14,7 @@ export default function Hero() {
       <h1>Legal help, in <span className="gradient-text">four simple steps.</span></h1>
       <p className="lead">From finding the right professional to tracking the outcome of your case, Sertify keeps every step transparent, secure, and in your pocket.</p>
       <div className="hero-cta">
-        <a href="services.html" className="btn btn-gold">Explore Services</a>
+        <a href="/services" className="btn btn-gold">Explore Services</a>
         <a href="#flow" className="btn btn-outline-light">See the Flow</a>
       </div>
     </div>

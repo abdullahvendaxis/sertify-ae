@@ -36,7 +36,7 @@ export default function HowItWork() {
       <h2>Not sure where to start?<br /><span className="gradient-text">Ask Sertify AI.</span></h2>
       <p>Our AI legal assistant helps you figure out which service you need, drafts documents on the spot, and connects you with the right verified provider.</p>
       <div style={{display: 'flex', gap: 12, marginTop: 24, flexWrap: 'wrap'}}>
-        <a href="modern.html#ai" className="btn btn-gold">Try AI Assistant
+        <a href="/#ai" className="btn btn-gold">Try AI Assistant
           <svg width={16} height={16} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><line x1={5} y1={12} x2={19} y2={12} /><polyline points="12 5 19 12 12 19" /></svg>
         </a>
       </div>
