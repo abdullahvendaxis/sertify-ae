@@ -19,10 +19,10 @@ export default function Footer() {
       <div>
         <h4>Platform</h4>
         <ul>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#how">How it Works</a></li>
-          <li><a href="#ai">AI Assistant</a></li>
-          <li><a href="#">Pricing</a></li>
+          <li><a href="/services">Services</a></li>
+          <li><a href="/how-it-work">How it Works</a></li>
+          <li><a href="/provider">For Providers</a></li>
+          <li><a href="/blogs">Blogs</a></li>
         </ul>
       </div>
       <div>
