@@ -14,14 +14,47 @@ import { SITE_URL } from "./lib/site";
 
 const PAGE_URL = `${SITE_URL}/providers`;
 const OG_IMAGE = `${SITE_URL}/logo.jpg`;
+
 export const metadata = {
   title: "Sertify | UAE's First Legal Services Marketplace",
   description:
     "Sertify connects you with verified legal and notary service providers across the UAE.",
-  icons: {
-    icon: "/logo.jpg",
+
+  alternates: {
+    canonical: PAGE_URL,
+  },
+
+  openGraph: {
+    title: "Sertify | UAE's First Legal Services Marketplace",
+    description:
+      "Sertify connects you with verified legal and notary service providers across the UAE.",
+    url: PAGE_URL,
+    siteName: "Sertify",
+    type: "website",
+    images: [
+      {
+        url: OG_IMAGE,
+        width: 1200,
+        height: 630,
+        alt: "Sertify",
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Sertify | UAE's First Legal Services Marketplace",
+    description:
+      "Sertify connects you with verified legal and notary service providers across the UAE.",
+    images: [OG_IMAGE],
+  },
+
+  robots: {
+    index: true,
+    follow: true,
   },
 };
+
 
 
 const structuredData = {
