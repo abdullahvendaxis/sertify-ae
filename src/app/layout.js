@@ -10,6 +10,10 @@ const inter = Inter({
 export const metadata = {
   metadataBase: new URL(SITE_URL), // ✅ IMPORTANT for dynamic URLs
 
+verification: {
+  google: "7D-0cstyN80XsBus9sE6mRjIfGjKq4ui-2AW6ffptcw",
+},
+
   title: {
     default: "Sertify | UAE's First Legal Services Marketplace",
     template: "%s | Sertify",
