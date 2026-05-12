@@ -9,7 +9,7 @@ import css from "@/app/blog.css";
 import { SITE_URL } from "../lib/site";
 
 const PAGE_URL = `${SITE_URL}/blog`;
-const OG_IMAGE = `${SITE_URL}/logo.jpg`;ww
+const OG_IMAGE = `${SITE_URL}/logo.jpg`;
 
 export const metadata = {
   title: "Blogs",

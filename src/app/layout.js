@@ -22,11 +22,7 @@ export const metadata = {
   // IMPORTANT
   metadataBase: new URL(SITE_URL),
 
-  // GOOGLE SEARCH CONSOLE VERIFICATION
-  verification: {
-    google:
-      "7D-0cstyN80XsBus9sE6mRjIfGjKq4ui-2AW6ffptcw",
-  },
+
 
   // TITLE
   title: {
@@ -110,6 +106,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+            <head>
+        <meta name="google-site-verification" content="7D-0cstyN80XsBus9sE6mRjIfGjKq4ui-2AW6ffptcw" />
+      </head>
+
       <body className={inter.className}>
         {children}
       </body>
