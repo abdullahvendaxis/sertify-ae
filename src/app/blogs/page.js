@@ -104,7 +104,7 @@ const structuredData = {
   ],
 };
 
-export default function ProviderPage() {
+export default function BlogsPage() {
   return (
     <>
       {/* Schema */}
