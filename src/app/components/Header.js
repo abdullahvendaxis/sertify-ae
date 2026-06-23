@@ -11,7 +11,7 @@ export default function Header() {
 
         {/* LOGO */}
         <a href="/" className="logo">
-          <img src="logo.jpg" alt="Sertify logo" />
+          <img src="/logo.jpg" alt="Sertify logo" />
           <span>Sertify</span>
         </a>
 
