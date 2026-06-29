@@ -11,6 +11,11 @@ const BACKEND_URL =
   process.env.NEXT_PUBLIC_BACKEND_API?.replace(/\/api\/?$/, "") ||
   "http://localhost:5000";
 
+const CLIENT_APP_URL =
+  process.env.NEXT_PUBLIC_CLIENT_APP_URL ||
+  process.env.VITE_CLIENT_APP_URL ||
+  "http://localhost:5173";
+
 const getText = (item, key) =>
   item?.[`${key}_en`] || item?.[key] || item?.[`${key}_ar`] || "";
 
@@ -120,6 +125,8 @@ export default async function ServiceDetailPage({ params }) {
   const image = resolveImage(service?.cover_image);
   const providerDetail = getProviderDetail(service || {});
   const rating = Number(providerDetail.rating_avg || 0);
+  const servicePath = `/services/${encodeURIComponent(slug)}`;
+  const bookUrl = `${CLIENT_APP_URL.replace(/\/$/, "")}/login?redirect=${encodeURIComponent(servicePath)}`;
 
   return (
     <>
@@ -175,7 +182,7 @@ export default async function ServiceDetailPage({ params }) {
                   <div className="service-detail-fact"><span>Booking</span><strong>{service.booking_enabled ? "Available" : "Request only"}</strong></div>
                 </div>
 
-                <a className="btn service-detail-book" href="#">Book now</a>
+                <a className="btn service-detail-book" href={bookUrl}>Book now</a>
               </aside>
             </div>
           )}

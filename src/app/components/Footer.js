@@ -6,7 +6,7 @@ export default function Footer() {
     <div className="footer-grid">
       <div className="footer-about">
         <div className="logo">
-          <img src="logo.jpg" alt="Sertify" />
+          <img src="/logo.jpg" alt="Sertify" />
           <span>Sertify</span>
         </div>
         <p>UAE's first digital legal services marketplace. Built to connect individuals and businesses with verified legal professionals across the Emirates, and soon across the GCC.</p>
